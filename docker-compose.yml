@@ -28,3 +28,12 @@ services:
             - "3400:80"
         depends_on:
             - db
+
+    npm:
+        build:
+            context: .
+        image: node:current-alpine
+        working_dir: /var/www/html
+        entrypoint: ["npm"]
+        volumes:
+            - ./:/var/www/html
