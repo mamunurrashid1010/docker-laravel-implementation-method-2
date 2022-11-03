@@ -29,4 +29,14 @@ Example
 ```
 php artisan migrate
 ```
-To exit container run ```exit```
+To exit container run ```exit``` <br>
+Stop and remove containers, networks, images, and volumes run ```docker compose down```
+
+## How to run node command
+1. Go to project directory <br>
+2. run command 
+```
+docker-compose run --rm npm install
+docker-compose run --rm npm run dev
+docker-compose run --rm npm run production
+``` 
